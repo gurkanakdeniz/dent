@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "mq.topics",
+    "type": "java.lang.String",
+    "description": "All MQ Topics"
+  },
+  {
+    "name": "mq.listen.topic.iext",
+    "type": "java.lang.String",
+    "description": "IEXT Consume Topic"
+  },
+  {
+    "name": "mq.listen.topic.iextdelete",
+    "type": "java.lang.String",
+    "description": "IEXT Consume Delete Topic"
+  }
+]}

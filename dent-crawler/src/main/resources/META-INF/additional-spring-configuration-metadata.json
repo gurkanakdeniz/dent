@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "mq.topics",
+    "type": "java.lang.String",
+    "description": "All MQ Topics"
+  },
+  {
+    "name": "mq.listen.topic.crawling",
+    "type": "java.lang.String",
+    "description": "Consumer Crawling Topic"
+  },
+  {
+    "name": "crawler.job.max-running",
+    "type": "java.lang.String",
+    "description": "Max Job Runnig Record"
+  },
+  {
+    "name": "crawler.job.check-time",
+    "type": "java.lang.String",
+    "description": "New Job Control Time"
+  },
+  {
+    "name": "webdriver.args",
+    "type": "java.lang.String",
+    "description": "WebDriber Args"
+  },
+  {
+    "name": "webdriver.option",
+    "type": "java.lang.String",
+    "description": "WebDriver Option"
+  },
+  {
+    "name": "webdriver.path",
+    "type": "java.lang.String",
+    "description": "WebDriver Path"
+  }
+]}

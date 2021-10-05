@@ -1,0 +1,32 @@
+{"properties": [
+  {
+    "name": "feign.url.crawler",
+    "type": "java.lang.String",
+    "description": "Crawler Service Url"
+  },
+  {
+    "name": "feign.url.iext",
+    "type": "java.lang.String",
+    "description": "IExt Service Url"
+  },
+  {
+    "name": "cors.allowedOrigins",
+    "type": "java.lang.String",
+    "description": "Cors Config"
+  },
+  {
+    "name": "cors.allowedMethods",
+    "type": "java.lang.String",
+    "description": "Cors Config"
+  },
+  {
+    "name": "cors.allowedHeaders",
+    "type": "java.lang.String",
+    "description": "Cors Config"
+  },
+  {
+    "name": "cors.exposedHeaders",
+    "type": "java.lang.String",
+    "description": "Cors Config"
+  }
+]}

@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  mongodb:
+    image: mongo:4.0.22
+    container_name: "mongodb"
+    ports:
+    - 27018:27017
+    
+  dent-bff:
+    build:
+      context: ../../dent-bff
+      dockerfile: ./Dockerfile
+    ports:
+    - 8081:8081
+    environment:
+    - feign_url_crawler=http://dent-crawler:8082
+    - feign_url_iext=http://dent-iext:8083
+    - spring_data_mongodb_host=mongodb
+    links:
+    - mongodb
+    
