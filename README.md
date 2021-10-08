@@ -104,10 +104,29 @@ Daha sonrası ise maven projesi olarak import edilebilir veya ayağa kaldırıla
 
 Ön yüz bileşenin ayağa kaldırılması için ilgili bileşin içindeki readme dökümanı kullanılabilir.
 
+##
+
 **2. Docker :**  Herhangi bir Linux dağıtımına Docker ([https://docs.docker.com/](https://docs.docker.com/)) ve Git ([https://git-scm.com/doc](https://git-scm.com/doc) ) kurulduktan sonra aşağıdaki komutlar yardımıyla (~20dk) sistem ayağa kaldırılabilir. (localhost:8080) Windows veya Macos için [https://docs.docker.com/compose/](https://docs.docker.com/compose/) dökümanı incelenebilir.
 
 Diğer ayar ve parametre açıklamaları için meta dosyalarına bakılabilir.
 
+- **Local Build**
+
+```
+git clone https://github.com/gurkanakdeniz/dent.git
+cd dent/dent-bff/dent-docker
+sudo docker-compose -f docker-compose-ui.yml up --build
+```
+	
+- **Image**
+
+```
+git clone https://github.com/gurkanakdeniz/dent.git
+cd dent
+sudo docker-compose -f docker-compose.yml up
+```
+
+## 
 
 **NOT:** Projede LDAP entegrasyonu kurulmamıştır ancak rol bazlı yetkilendirme yapılmıştır. BFF katmanına ui üzerinden veya swagger üzerinden erişmek için öncelikle /login üzerinden token alınması gerekmektedir.
 
@@ -124,11 +143,7 @@ Diğer ayar ve parametre açıklamaları için meta dosyalarına bakılabilir.
 **password:** 42 
 **role:** api
 
-```
-git clone https://github.com/gurkanakdeniz/dent.git
-cd dent/dent-bff/dent-docker
-sudo docker-compose -f docker-compose-ui.yml up --build
-```
+
 
 ## Ekran Görüntüleri
 
